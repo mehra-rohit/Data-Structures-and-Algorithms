@@ -1,6 +1,8 @@
 '''
 Iterates through the array and checks if adjacent element is larger, if not swap.
 By the end of first iteration largest value is at last index.
+Time Complexity : O(N^2) worst and O(N) best
+Space Complexity : O(1) 
 '''
 def bubble_sort(arr):
     if len(arr)==0:
