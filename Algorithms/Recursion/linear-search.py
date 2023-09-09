@@ -13,6 +13,7 @@ def linear_search(arr,target, i = 0):
 print(linear_search([1,2,3,1,1,2,3],10))
 
 #multiple occurences
+#with argument pass
 def linear_search(arr,target, i = 0,ind = []):
     
     #base condition
@@ -23,4 +24,16 @@ def linear_search(arr,target, i = 0,ind = []):
     else:
         return ind
     
+print(linear_search([1,2,3,10,10,2,3,10],10))
+
+#without argument pass
+def linear_search(arr,target, i = 0):
+    ind = []
+    if i==len(arr):
+        return []
+    #base condition
+    if arr[i]==target:
+        ind.append(i)
+    return ind + linear_search(arr,target,i+1)
+
 print(linear_search([1,2,3,10,10,2,3,10],10))
