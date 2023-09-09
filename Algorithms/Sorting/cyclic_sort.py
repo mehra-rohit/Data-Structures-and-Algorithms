@@ -13,8 +13,9 @@ def cyclic_sort(arr):
 
     i = 0
     while i < len(arr)-1:
-        if i+1 != arr[i]:
-            swap_element(arr, i, arr[i]-1)
+        correct = arr[i]-1
+        if arr[correct] != arr[i]:
+            swap_element(arr, i, correct)
         else: i += 1
     
     return arr
