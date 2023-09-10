@@ -16,3 +16,18 @@ def permutations(up,p=''):
 
 a = permutations('abc')
 print(a)
+
+# returns count of permutations
+def permutations(up,p=''):
+    c = 0
+    if len(up)==0:
+        c+=1
+        return c
+    
+    ch0 = up[0]
+    
+    for i in range(len(p)+1):
+        s = p[0:i]
+        e = p[i:len(p)]
+        c += permutations(up[1:],s+ch0+e)
+    return c
