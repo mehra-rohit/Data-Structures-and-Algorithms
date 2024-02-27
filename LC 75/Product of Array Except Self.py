@@ -20,3 +20,5 @@ def product_except_self(nums: list[int]) -> list[int]:
 nums1 = [1, 2, 3]
 assert product_except_self(nums1) == [6, 3, 2]
 
+
+
