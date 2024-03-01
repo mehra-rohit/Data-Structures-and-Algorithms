@@ -57,7 +57,7 @@ def rain_water_op(height: list[int]) -> int:
         if leftMax < rightMax:
             l += 1
             leftMax = max(leftMax, height[l])
-            ans += max(0,leftMax - height[l])
+            ans += max(0, leftMax - height[l])
         else:
             r -= 1
             rightMax = max(rightMax, height[r])

@@ -9,6 +9,7 @@ Given an integer target, return true if target is in matrix or false otherwise.
 # do binary search to find the row in which the target exist
 # do 2nd binary search in row to find target
 
+
 def search_2D(matrix: list[list[int]], target: int) -> bool:
     rows, cols = len(matrix), len(matrix[0])
 
@@ -33,7 +34,7 @@ def search_2D(matrix: list[list[int]], target: int) -> bool:
     row = (top + bot) // 2
     l, r = 0, cols - 1
     while l <= r:
-        mid = (l+r) //  2
+        mid = (l + r) // 2
         if target < matrix[row][mid]:
             r = mid - 1
         elif target > matrix[row][mid]:
