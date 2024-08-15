@@ -25,7 +25,7 @@ def twoSum(nums: List[int], target: int) -> List[int]:
 
 assert twoSum(nums, target) == [0,1] 
 
-
+# time -> O(n), Space -> O(n)
 def twoSum(nums: List[int], target: int) -> List[int]:
     temp = {}
 
