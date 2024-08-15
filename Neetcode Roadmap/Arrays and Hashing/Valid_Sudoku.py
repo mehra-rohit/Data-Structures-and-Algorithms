@@ -67,6 +67,8 @@ assert isValidSudoku(board) == True
 assert isValidSudoku(board2) == False
 
 from collections import defaultdict
+
+# time -> O(9*9), space -> O(9)
 def isValidSudoku(board: List[List[str]]) -> bool:
     rows = defaultdict(set)
     cols = defaultdict(set)
